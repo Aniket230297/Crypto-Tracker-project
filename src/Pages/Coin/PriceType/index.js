@@ -22,7 +22,10 @@ export default function TogglePriceType({handleToggleChange, priceType}) {
        
       }}
     >
-      <ToggleButton value="prices">PRICE</ToggleButton>
+      <ToggleButton value="prices" sx={{
+        color:"var(--blue) !important",
+        
+      }}>PRICE</ToggleButton>
 
       <ToggleButton value="market_caps">MARKET CAP</ToggleButton>
 
