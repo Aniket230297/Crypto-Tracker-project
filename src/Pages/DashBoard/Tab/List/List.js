@@ -7,23 +7,23 @@ function List({ coin }) {
   const isPricePositive = coin.price_change_percentage_24h > 0;
 
   return (
-    <tr className='list-row'>
-      <td className='info-flex'>
-        <img src={coin.image} className='coin-logo' alt='img' />
-        <div className='coin-info'>
-          <p className='coinSymbol'>{coin.symbol}</p>
-          <p className='coinName'>{coin.name}</p>
+    <tr className='list-row responsive-list-row'>
+      <td className='info-flex responsive-flex'>
+        <img src={coin.image} className='coin-logo responsive-logo' alt='img' />
+        <div className='coin-info responsive-info'>
+          <p className='coinSymbol  responsive-symbol'>{coin.symbol}</p>
+          <p className='coinName  responsive-name'>{coin.name}</p>
         </div>
       </td>
 
-      <td className='chip-flex'>
-        <td className={`coin-percentage ${isPricePositive ? 'coin-percentage-hovering-green' : 'coin-red coin-percentage-hovering-red'}`}>
-          {coin.price_change_percentage_24h.toFixed(2)}%
+      <td className='chip-flex responsive-chip-flex'>
+        <td className={`coin-percentage responsive-coin-percentage ${isPricePositive ? 'coin-percentage-hovering-green' : 'coin-red coin-percentage-hovering-red'}`}>
+          {coin.price_change_percentage_24h.toFixed(2)}% 
         </td>
         {isPricePositive ? (
-          <TrendingUpRoundedIcon className='trending-icon coin-percentage-hovering-green' />
+          <TrendingUpRoundedIcon className='trending-icon coin-percentage-hovering-green responsive-icon-green' />
         ) : (
-          <TrendingDownRoundedIcon className='trending-icon down-icon coin-percentage-hovering-red' />
+          <TrendingDownRoundedIcon className='trending-icon down-icon coin-percentage-hovering-red responsive-icon-red' />
         )}
       </td>
 
