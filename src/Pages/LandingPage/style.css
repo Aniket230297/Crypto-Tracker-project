@@ -1,79 +1,95 @@
-
-.landing-flex{
+.landing-flex {
     padding: 1rem 2rem;
     display: flex;
     margin-top: 20px;
 }
 
-.left-div{
-        padding: 20px;
-        width:60%;
-      
+.left-div {
+    padding: 20px;
+    width: 60%;
+
 }
 
 
-.crypto-heading,.real-time-heading{
+.crypto-heading,
+.real-time-heading {
     font-size: 7rem;
 }
 
-.crypto-heading{
+.crypto-heading {
     margin: 0;
-   width:0;
-   
+    width: 0;
+
     -webkit-text-stroke-width: 0.2rem;
-  -webkit-text-stroke-color: var(--white);
+    -webkit-text-stroke-color: var(--white);
 }
 
-.real-time-heading{
+.real-time-heading {
     color: var(--blue);
 }
 
-.btn-flex{
+.btn-flex {
     display: flex;
-    margin:2rem;
-    gap:1rem;
+    margin: 2rem;
+    gap: 1rem;
 }
 
-.crypto-heading:hover{
-   
+.crypto-heading:hover {
+
     -webkit-text-stroke-width: 0.2rem;
-  -webkit-text-stroke-color:var(--white);
-  -webkit-text-fill-color: var(--black);
+    -webkit-text-stroke-color: var(--white);
+    -webkit-text-fill-color: var(--black);
 }
 
-.right-div{
+.right-div {
     width: 40%;
-    position:relative;
-   
+    position: relative;
+
 }
 
-.phoneImg{
+.phoneImg {
     position: absolute;
-   margin-left: 100px;
-   width:280px
-   
+    margin-left: 60px;
+    width: 280px
 }
 
-.gradientimg{
+.gradientimg {
     width: 250px;
-    margin-left: 150px;
-    margin-top: 70px;
+    margin-left: 30px;
+    margin-top: 50px;
 }
 
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 450px) {
 
-    .phoneImg{
-            position: absolute;
-           margin-left: 100px;
-           width:180px
-           
-        }
-        
-        .gradientimg{
-            width: 120px;
-            margin-left: 150px;
-            margin-top: 70px;
-        }
+    .crypto-heading,
+    .real-time-heading {
+        font-size: 3.5rem;
+    }
+
+    .phoneImg {
+        position: absolute;
+        margin-left: -10px;
+        width: 180px
+    }
+
+    .gradientimg {
+        width: 120px;
+        margin-left: 30px;
+        margin-top: 70px;
+       
+    }
+
+    .right-div {
+        width: 100%;
+        position: relative;
+    }
+
+    .left-div{
+        padding: 0;
+        margin: 0;
+    }
+
+
 }
