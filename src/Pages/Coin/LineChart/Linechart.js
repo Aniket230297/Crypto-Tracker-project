@@ -25,7 +25,7 @@ function Linechart({chartData, priceType, multiAxis}) {
             }
         }
     }
-  return <Line data={chartData} options={options} />
+  return <Line data={chartData} options={options}  className='line-chart-data-responsive'/>
 }
 
 export default Linechart;

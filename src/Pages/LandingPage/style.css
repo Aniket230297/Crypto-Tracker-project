@@ -55,7 +55,7 @@
 
 .gradientimg {
     width: 250px;
-    margin-left: 30px;
+    margin-left: 90px;
     margin-top: 50px;
 }
 
@@ -63,9 +63,12 @@
 
 @media only screen and (max-width: 450px) {
 
-    .crypto-heading,
     .real-time-heading {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .crypto-heading{
+        font-size: 3rem;
     }
 
     .phoneImg {
@@ -73,6 +76,10 @@
         margin-left: -10px;
         width: 180px
     }
+
+        .left-div > p{
+            font-size:1rem;
+        }
 
     .gradientimg {
         width: 120px;
@@ -89,6 +96,11 @@
     .left-div{
         padding: 0;
         margin: 0;
+    }
+
+    .btn-flex{
+        margin:0;
+        margin-top: 40px;
     }
 
 

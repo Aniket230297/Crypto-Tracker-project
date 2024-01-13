@@ -50,6 +50,8 @@
     .list-row{
         gap:0.1rem;
         margin-left: 0;
+        width:100%;
+
     }
 
     .responsive-list-row {
@@ -69,6 +71,7 @@
 
     .responsive-symbol, .responsive-name{
         font-size: 0.6rem;
+        margin-right: -20px;
     }
 
     .responsive-info{
@@ -82,17 +85,59 @@
     .responsive-coin-percentage{
         border: 1px solid red;
         padding: 5px;
-        margin: 0;
+        margin-left: 45px;
         /* margin-top: 20px; */
-        margin-right: -30px; 
-    }
+        margin-right: -40px; 
+        width: 40px;
+        font-size: 10px;
+    } 
 
    
     .responsive-icon-green{
         margin-left:30px;
+        width:10px;
+        padding: 0;
     }
 
     .responsive-icon-red{
         margin-left:30px;
+        width:15px;
+        padding: 0;
     }
+
+    .responsive-chip-flex{
+        width:0;
+        padding: 0;
+        margin-right: -20px;
+    }
+
+    .responsive-info-list-container{
+       margin-left: 80px;
+        width: 50px;
+        font-size: 13px;
+    }
+
+    .responsive-flex{
+        width:40px;
+        margin-left: 0px;
+    }
+
+    .responsive-coin-price, .responsive-vol, .responsive-total-volume{
+        font-size: 10px;
+        width:0;
+        padding: 10px;
+    }
+
+    .responsive-coin-price{
+        margin-left: 60px;
+    }
+
+    .responsive-vol{
+        margin-left: 33px;
+    }
+
+    .responsive-total-volume{
+        margin-left: 60px;
+    }
+
 }

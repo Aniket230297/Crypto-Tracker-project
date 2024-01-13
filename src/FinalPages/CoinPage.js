@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import axios from 'axios';
 import { useState } from 'react';
 import Loader from '../Components/Common/Loader/index'
 import { CoinObject } from '../Components/Functions/ConvertCoinObject.js';
@@ -73,17 +72,18 @@ function CoinPage() {
     
 
     return (
-        <div>{isLoading ? (<><Loader /></>) : (
-            <>
+        <div className='responsive-wrapper-div'>{isLoading ? (<><Loader /></>) : (
+            <div className='responsive-chart-div'>
                 <Header />
-                <List coin={coinData} />
+                <List coin={coinData}  />
                 <div className='wrapper-div'>
                     <SelectDays day={day} handledaysChange={handledaysChange} />
                     <TogglePriceType handleToggleChange={handleToggleChange} priceType={priceType} />
                     <Linechart chartData={chartData} />
                 </div>
                 <CoinInfo heading={coinData.name} desc={coinData.desc} />
-            </>)}
+            </div>
+            )}
         </div>
 
 

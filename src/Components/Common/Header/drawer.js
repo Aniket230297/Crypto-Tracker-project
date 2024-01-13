@@ -22,8 +22,8 @@ export default function TemporaryDrawer() {
           >
             <div className='drawer-div'>
           <a href='#'><p className='link'>Home</p></a>
-          <a href='#'><p className='link'>Watchlist</p></a>
-          <Link to="/dashboard" className="link">Dashboard</Link>
+          {/* <a href='#'><p className='link'>Watchlist</p></a> */}
+          <Link to="/dashboard" className="link responsive-header-link">Dashboard</Link>
           
           </div>
           </Drawer>

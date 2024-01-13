@@ -33,7 +33,11 @@
     display: none;
 }
 
-@media only screen and (max-width: 800px) {
+.responsive-header-link{
+      margin-top: 90px;
+}
+
+/* @media only screen and (max-width: 800px) {
     .links{
         display: none;
     }
@@ -61,4 +65,4 @@
         padding-top: 10px;
     }
     
-  }
+  } */

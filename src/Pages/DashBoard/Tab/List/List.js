@@ -27,17 +27,17 @@ function List({ coin }) {
         )}
       </td>
 
-      <td className='info-list-container'>
+      <td className=' info-list-container responsive-info-list-container'>
         <td>
-          <h3 className={`coin-price ${isPricePositive ? '' : 'coin-price-red'}`}>
+          <h3 className={` responsive-coin-price coin-price ${isPricePositive ? '' : 'coin-price-red'}`}>
             ${coin.current_price.toLocaleString()}
           </h3>
-        </td>
+        </td> 
         <td className='total-volume'>
-          <p className='vol'> {coin.total_volume.toLocaleString()}</p>
+          <p className='vol responsive-vol'> {coin.total_volume.toLocaleString()}</p>
         </td>
-        <td className='total-volume'>
-          <p className='vol'> {coin.market_cap.toLocaleString()}</p>
+        <td className='total-volume '>
+          <p className='vol responsive-total-volume'> {coin.market_cap.toLocaleString()}</p>
         </td>
       </td>
     </tr>
